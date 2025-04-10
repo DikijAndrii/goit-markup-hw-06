@@ -370,7 +370,10 @@ img {
 }
 /* ----------------------team----------------------------- */
 .team {
-  padding: 96px 28px;
+  padding: 96px 0px;
+}
+.team .container {
+  width: 296px;
 }
 .team-title {
   margin-bottom: 72px;
@@ -460,7 +463,10 @@ img {
 
 @media screen and (min-width: 768px) {
   .team {
-    padding: 96px 108px;
+    padding: 96px 0px;
+  }
+  .team .container {
+    width: 584px;
   }
   .team-list {
     display: flex;
@@ -470,5 +476,19 @@ img {
   }
   .team-item {
     width: calc((100% - 24px) / 2);
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .section.team {
+    padding: 120px 0;
+  }
+  .team-list {
+    flex-wrap: nowrap;
+
+    gap: 24px;
+  }
+  .team-item {
+    width: calc((100% - 72px) / 4);
   }
 }
