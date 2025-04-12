@@ -216,11 +216,23 @@ img {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office1.jpg);
+    url(../images/hero-bg-mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
+
+@media screen and (min-resolution: 2x) {
+  .main {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-bg-mob-2x.jpg);
+  }
+}
+
 .main-title {
   font-size: 36px;
   line-height: 1.1;
@@ -264,7 +276,18 @@ img {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/people-office1.jpg);
+      url(../images/hero-bg-tab.jpg);
+  }
+
+  @media screen and (min-resolution: 2x) {
+    .main {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero-bg-tab-2x.jpg);
+    }
   }
 
   .main-title {
@@ -286,9 +309,21 @@ img {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/people-office1.jpg);
+      url(../images/hero-bg.jpg);
   }
 }
+
+@media screen and (min-resolution: 2x) {
+  .main {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      )
+      url(../images/hero-bg-2x.jpg);
+  }
+}
+
 /* -----------------------Info------------------------- */
 .informations {
   padding: 96px 0;
@@ -483,6 +518,10 @@ img {
   .section.team {
     padding: 120px 0;
   }
+
+  .team .container {
+    width: 1158px;
+  }
   .team-list {
     flex-wrap: nowrap;
 
@@ -491,4 +530,12 @@ img {
   .team-item {
     width: calc((100% - 72px) / 4);
   }
+}
+/* ---------------------portfolio-------------------------------- */
+
+.portfolio {
+  padding: 96px 0;
+}
+.portfolio .container {
+  width: 288px;
 }
