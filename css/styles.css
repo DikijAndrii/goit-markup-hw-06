@@ -898,6 +898,10 @@ img {
   }
   .footer-wrap-logo {
     text-align: left;
+    width: 264px;
+  }
+  .footer-input {
+    width: 264px;
   }
 
   .footer-social-text {
